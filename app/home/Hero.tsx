@@ -76,7 +76,7 @@ const handleChange = (bg: string, textColor: string) => {
 
     {colorPalette.map((item:any)=>(
 
-      <div className="flex mt-2.5" itemID={item}  onClick={()=>handleChange(item.bg,item.textColor)}>
+      <div className="flex mt-2.5" key={item.id}  onClick={()=>handleChange(item.bg,item.textColor)}>
         <div className="h-6 w-6 rounded-l-full" style={{backgroundColor:item.bg}}></div>
          <div className="h-6 w-6 rounded-r-full" style={{backgroundColor:item.textColor}}></div>
       </div>
