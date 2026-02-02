@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
-import "./globals.css";
+import './globals.css'
+
 import localFont from "next/font/local";
 
 const gopher = localFont({
@@ -29,7 +30,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${gopher.variable} ${tattosWishe.variable} `}
+
       >
+        
         {children}
       </body>
     </html>

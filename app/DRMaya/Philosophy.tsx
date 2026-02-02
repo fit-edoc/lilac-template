@@ -10,8 +10,8 @@ export const Philosophy = () => {
           <div className="md:col-span-4">
             <FadeIn>
               <div className="sticky top-32">
-                <span className="text-sm uppercase tracking-widest text-[#1a1714]/40 block mb-4">My Approach</span>
-                <h2 className="font-serif text-4xl md:text-5xl leading-none">
+                <span className="text-sm uppercase tracking-widest text-[#1a1714] block mb-4 pl-1.5">My Approach</span>
+                <h2 className="font-serif text-4xl md:text-5xl leading-none text-neutral-600/40">
                   Warm, <br/>Collaborative, <br/>Grounded.
                 </h2>
               </div>

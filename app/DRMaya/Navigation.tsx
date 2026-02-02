@@ -7,10 +7,12 @@ export const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => setScrolled(window.scrollY > 1);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+
 
   const links = [
     { name: 'Philosophy', href: '#philosophy' },
@@ -21,14 +23,14 @@ export const Navigation = () => {
 
   return (
     <motion.nav 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'py-4' : 'py-8'
+      className={` top-[2%] left-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? 'py-8' : 'py-10'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="max-w-[1800px]  mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-[1800px]  mx-auto px-6 flex justify-between items-center sm:px-10 lg:px-24">
         <motion.div 
           className="text-2xl font-serif tracking-tight z-50 text-[#000000]"
           whileHover={{ scale: 1.05 }}
@@ -37,7 +39,7 @@ export const Navigation = () => {
         </motion.div>
 
         <div className={`hidden md:flex gap-8 p-4 px-8 rounded-full backdrop-blur-md transition-colors ${
-          scrolled ? 'bg-[#1a1714]/5 border border-[#1a1714]/10' : 'bg-white/30 border border-white/40'
+          scrolled ? 'bg-[#d3c8bdc7] border border-[#1a1714]/10' : 'bg-neutral-800 border border-white/40'
         }`}>
           {links.map((link) => (
             <a 

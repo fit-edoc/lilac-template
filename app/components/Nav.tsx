@@ -6,10 +6,16 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
-
+const [scrolled, setScrolled] = useState(false);
   const handleToggle = () => {
     setOpen((prev) => !prev);
   };
+
+    useEffect(() => {
+      const handleScroll = () => setScrolled(window.scrollY > 1);
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
  
   useEffect(() => {
@@ -28,7 +34,7 @@ const Nav = () => {
   return (
     <>
       {/* NAVBAR */}
-      <div className="h-[126px] w-full fixed flex justify-center items-start pt-5 md:pt-10 lg:h-[50px] lg:pt-3.5 z-50">
+      <div className={`h-[126px] w-full fixed    flex justify-center items-start pt-5 md:pt-10 lg:h-[50px] lg:pt-3.5 z-50 ${scrolled?"top-[-10%] duration-1000":"opacity-100"}`}>
         <div className="h-[32px] w-[90vw] flex justify-between items-center">
           <div className="block lg:hidden">
             <ToggleMenu open={open} handleToggle={handleToggle} />

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Star } from 'lucide-react';
 import { FadeIn } from '../icons/FadeIn';
+import Image from 'next/image';
 
 
 
@@ -58,8 +59,9 @@ export const MayaHero = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.8 }}
             >
-              <div className="flex items-center gap-2 mb-2">
-                <Star size={16} className="text-amber-500 fill-amber-500" />
+              <div className="flex items-center gap-2 mb-2 items-center">
+                {/* <Star size={16} className="text-amber-500 fill-amber-500" /> */}
+                <Image width={1000} sizes='16' height={1000} className='h-5 w-5' alt='image' src='/therapy.png' />
                 <span className="font-bold text-[#1a1714]">Evidence-Based</span>
               </div>
               <p className="text-sm text-[#1a1714]/70">Integrating CBT, EMDR, and Mindfulness-Based practices.</p>
