@@ -49,8 +49,8 @@ export const Contact = () => {
         <div className="mt-24 pt-8 border-t border-[#f9f7f3]/10 flex flex-col md:flex-row justify-between items-center text-[#f9f7f3]/40 text-sm">
           <p>© 2024 Dr. Maya Reynolds, PsyD. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-[#f9f7f3] transition-colors">Instagram</a>
-            <a href="#" className="hover:text-[#f9f7f3] transition-colors">Psychology Today</a>
+            <a href="#s" className="hover:text-[#f9f7f3] transition-colors">Instagram</a>
+            <a href="#s" className="hover:text-[#f9f7f3] transition-colors">Psychology Today</a>
           </div>
         </div>
       </div>
