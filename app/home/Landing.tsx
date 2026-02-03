@@ -7,6 +7,7 @@ import { Philosophy } from '../DRMaya/Philosophy'
 import { Services } from '../DRMaya/Services'
 import { AboutSection } from '../DRMaya/About'
 import { Contact } from '../DRMaya/Contact'
+import { FAQs } from '../DRMaya/Faq'
 
 const Landing = () => {
   return (
@@ -24,6 +25,7 @@ const Landing = () => {
         <Philosophy />
         <Services />
         <AboutSection/>
+        <FAQs/>
         <Contact />
       </main>
     </div>

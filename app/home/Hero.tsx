@@ -87,17 +87,17 @@ const handleChange = (bg: string, textColor: string) => {
 
    
    </div>
-      <div className="h-[60vh] w-[100vw]  flex justify-center items-end pb-2.5 sm:w-[50vw] sm:h-[100vh]">
-        <Image src='/newback.png' loading='eager' alt='hero' height={100} width={100} className='h-[60vh] w-full object-contain sm:h-[80vh] md:w-[60vw]' />
+      <div className="h-[70vh] w-[100vw]  flex justify-center items-end pb-2.5 sm:w-[50vw] sm:h-[100vh] sm:items-center lg:items-end">
+        <Image src='/newback.png' loading='eager' alt='hero' height={100} width={100} className='h-[50vh] sm:h-[60vh] w-full object-contain sm:h-[80vh] md:h-[60vh] lg:h-[80vh] md:w-[50vw]' />
       </div>
-     <div className="h-[50vh] w-[100vw]  flex flex-col  items-center py-6 capitalize sm:w-[50vw]  sm:h-[100vh] sm:justify-center lg:justify-end lg:pr-32 lg:pb-32">
-      <h1 className='text-4xl    font-gopher text-[var(--text-color)] max-w-[300px] md:text-[5vw]  md:max-w-[330px]  text-center lg:max-w-[600px]' style={{color:textColor}}>
-        live your life <br /> in full of bloom
+     <div className="h-[50vh] w-[100vw]  flex flex-col  items-center py-6  sm:w-[50vw]  sm:h-[100vh] sm:justify-center lg:justify-end lg:pr-34 lg:pb-30">
+      <h1 className='text-4xl    font-gopher text-[var(--text-color)] max-w-[300px] md:text-[5vw]  md:max-w-[330px]   lg:max-w-[600px] lg:text-[5.5vw]' style={{color:textColor}}>
+        Live your life <br /> in full  bloom
       </h1>
 
    <h3 className='text-center text-lg font-light text-[var(--text-color)] max-w-[200px] pt-5 md:max-w-[330px]'>Therapy for Adults in Minneapolis, MN.</h3>
 
-   <button className='py-2 px-6 bg-transparent border border-black text-black mt-5 font-medium  items-center gap-1.5 capitalize flex hover:bg-[var(--text-color)] hover:text-white duration-700 transition-all'>
+   <button className='py-2 px-6 bg-transparent border-[0.1px] border-black text-black mt-5 font-medium  items-center gap-1.5 capitalize flex hover:bg-[var(--text-color)] hover:text-white duration-700 transition-all'>
     connect with me  <MoveRight  />
    </button>
      </div>

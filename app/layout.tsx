@@ -5,7 +5,7 @@ import './globals.css'
 import localFont from "next/font/local";
 
 const gopher = localFont({
-  src: "../public/gopher.otf",
+  src: "../public/gopher1.ttf",
   variable: "--font-gopher",
   
 });

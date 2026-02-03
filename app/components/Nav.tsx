@@ -49,8 +49,8 @@ const [scrolled, setScrolled] = useState(false);
               <h1>Lilac Template</h1>
             </div>
             <div className="hidden lg:flex gap-8 text-lg">
-              <h1>Blog</h1>
-              <h1>Contact</h1>
+              <h1 className="hover:opacity-55 cursor-pointer duration-500">Blog</h1>
+              <h1 className="hover:opacity-55 cursor-pointer duration-500">Contact</h1>
             </div>
           </div>
         </div>
