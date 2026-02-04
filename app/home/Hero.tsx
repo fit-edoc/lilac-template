@@ -58,7 +58,7 @@ const handleChange = (bg: string, textColor: string) => {
     <>
     
    
-    <div className='min-h-[120vh] relative  w-full bg-[var(--primary-color)] flex  flex-col sm:flex-row md:flex-row' style={{backgroundColor:bg}}>
+    <div className='min-h-[120vh] relative  w-full bg-(--primary-color) flex  flex-col sm:flex-row md:flex-row' style={{backgroundColor:bg}}>
    
    <div className="capsule absolute right-3.5 z-50 top-[20%] bg-[#bababa]   flex justify-center flex-col items-center min-h-8 px-2.5 rounded-full md:top-[20%]" >
 
@@ -88,17 +88,17 @@ const handleChange = (bg: string, textColor: string) => {
 
    
    </div>
-      <div className="h-[70vh] w-[100vw]  flex justify-center items-end pb-2.5 sm:w-[50vw] sm:h-[100vh] sm:items-center lg:items-end">
+      <div className={`h-[70vh] w-screen  flex justify-center items-end pb-2.5 sm:w-[50vw] sm:h-screen sm:items-center lg:items-end`}>
         <motion.img  initial={{y:30,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.3,ease:"linear"}} src="/newback.png"   alt='hero' className='h-[50vh] sm:h-[60vh] w-full object-contain sm:h-[80vh] md:h-[60vh] lg:h-[80vh] md:w-[50vw]' />
       </div>
-     <div className="h-[50vh] w-[100vw]  flex flex-col  items-center py-6  sm:w-[50vw]  sm:h-[100vh] sm:justify-center lg:justify-end lg:pr-34 lg:pb-30">
-      <motion.h1 initial={{y:30,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.3,ease:"linear"}} className='text-4xl    font-gopher text-[var(--text-color)] max-w-[300px] md:text-[5vw]  md:max-w-[330px]   lg:max-w-[600px] lg:text-[5.5vw]' style={{color:textColor}}>
+     <div className="h-[50vh] w-screen  flex flex-col  items-center py-6  sm:w-[50vw]  sm:h-screen sm:justify-center lg:justify-end lg:pr-34 lg:pb-30">
+      <motion.h1 initial={{y:30,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.3,ease:"linear"}} className='text-4xl    font-gopher text-(--text-color) max-w-[300px] md:text-[5vw]  md:max-w-[330px]   lg:max-w-[600px] lg:text-[5.5vw]' style={{color:textColor}}>
         Live your life <br /> in full  bloom
       </motion.h1>
 
-   <motion.h3  className='text-center text-lg font-light text-[var(--text-color)] max-w-[200px] pt-5 md:max-w-[330px]'>Therapy for Adults in Minneapolis, MN.</motion.h3>
+   <motion.h3  className='text-center text-lg font-light text-(--text-color) max-w-[200px] pt-5 md:max-w-[330px]'>Therapy for Adults in Minneapolis, MN.</motion.h3>
 
-   <motion.button  initial={{y:10,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.2,ease:"linear"}} className='py-2 px-6 bg-transparent border-[0.1px] border-black text-black mt-5 font-medium  items-center gap-1.5 capitalize flex hover:bg-[var(--text-color)] hover:text-white duration-700 transition-all'>
+   <motion.button  initial={{y:10,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.2,ease:"linear"}} className='py-2 px-6 bg-transparent border-[0.1px] border-black text-black mt-5 font-medium  items-center gap-1.5 capitalize flex hover:bg-(--text-color) hover:text-white duration-700 transition-all'>
     connect with me  <MoveRight  />
    </motion.button>
      </div>

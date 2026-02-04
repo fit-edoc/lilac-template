@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
@@ -23,8 +25,8 @@ export const Navigation = () => {
 
   return (
     <motion.nav 
-      className={` top-[2%] left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'py-8' : 'py-10'
+      className={` top-[1%] left-0 fixed w-full z-50 transition-all duration-300 ${
+        scrolled ? 'py-3' : 'py-3'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -39,13 +41,13 @@ export const Navigation = () => {
         </motion.div>
 
         <div className={`hidden md:flex gap-8 p-4 px-8 rounded-full backdrop-blur-md transition-colors ${
-          scrolled ? 'bg-[#d3c8bdc7] border border-[#1a1714]/10' : 'bg-neutral-800 border border-white/40'
+          scrolled ? 'bg-[#0000006d] border border-[#1a1714]/10' : 'bg-[#0000004c] border border-white/40'
         }`}>
           {links.map((link) => (
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-sm uppercase tracking-widest text-[#1a1714] hover:opacity-50 transition-opacity"
+              className="text-sm uppercase tracking-widest text-[#ffffff] hover:opacity-50 transition-opacity"
             >
               {link.name}
             </a>

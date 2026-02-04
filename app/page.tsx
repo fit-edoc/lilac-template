@@ -12,7 +12,8 @@ import { Services } from "./DRMaya/Services";
 import Hero from "./home/Hero";
 import Nav from "./components/Nav";
 import { Office } from "./DRMaya/Office";
-import Landing from "./home/Landing";
+
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,7 +26,13 @@ export default function Home() {
 
  <Hero/>
 
-<Landing/>/
+
+
+<div className="h-25 w-full bg-(--primary-color) justify-center items-end py-1.5 flex">
+  <Link  href="/Maya" className="px-3 py-2  relative rounded-full text-black  overflow-hidden border-[0.1px] border-black/60">
+  <div className="absolute h-full w-full bg-gradient-br from-neutral-700 to-neutral-300 blur-lg rounded-full "></div>
+  Next One</Link>
+</div>
    </div>
     
 
