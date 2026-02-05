@@ -40,7 +40,7 @@ export const Navigation = () => {
           Dr. Maya Reynolds.
         </motion.div>
 
-        <div className={`hidden md:flex gap-8 p-4 px-8 rounded-full backdrop-blur-md transition-colors ${
+        <div className={`hidden md:flex gap-8 p-4 px-8 rounded-full backdrop-blur-md transition-colors md:ml-10 lg:mr-20 ${
           scrolled ? 'bg-[#0000006d] border border-[#1a1714]/10' : 'bg-[#0000004c] border border-white/40'
         }`}>
           {links.map((link) => (
